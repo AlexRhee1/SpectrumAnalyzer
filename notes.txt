@@ -1,0 +1,27 @@
+* set wsl to version 2
+* install ubuntu
+* run, setup, apt update & upgrade, etc. ubuntu
+
+* IMPORTANT!!!
+	-> You need to do the /etc/wsl.conf thing to allow stuffs to work
+	-> https://alessandrococco.com/2021/01/wsl-how-to-resolve-operation-not-permitted-error-on-cloning-a-git-repository
+
+* pretty much follow the written guide ( for all of these run them with sudo )
+	-> sdk + examples
+		- Added export of PICO_SDK_PATH to bashrc
+	-> compilers
+* For cmake, I installed the prebuilt binaries (.sh file)
+	-> PUT THIS IN YOUR USER'S HOME DIR (or something within WSL, just not anywhere in the c drive)
+		- New note.... This can be anywhere, I thought it fixed the issue but it doesn't
+	-> from "https://cmake.org/download/"
+	-> for Linux x86_64
+	-> then you have to add the cmake bin folder to the path
+	-> added this export of PATH to my bashrc file
+
+* I installed the pico project generator, but it's not explicitly necessary
+
+* I installed vcXsrv (to look at graphical programs from wsl)
+	-> Additionally I added an export of DISPLAY to my bashrc file to make this work all the time
+
+* Good video on how to do all the stuff:
+	- https://www.youtube.com/watch?v=NCaL6tXAF0c
